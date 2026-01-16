@@ -1,5 +1,8 @@
 
-namespace Villa
+using Microsoft.EntityFrameworkCore;
+using Villa_API.Data;
+
+namespace Villa_API
 {
     public class Program
     {
@@ -8,6 +11,10 @@ namespace Villa
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<ApplicationDbContext>(option =>
+            {
+                option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
