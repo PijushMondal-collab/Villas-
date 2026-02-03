@@ -1,7 +1,5 @@
 .vs/
 obj/
 bin/
-*.csproj.user
-*.csproj
 *.http
 
