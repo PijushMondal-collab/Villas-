@@ -2,4 +2,7 @@
 obj/
 bin/
 *.http
-
+Migrations/
+*.csproj
+*.csproj.user
+appsettings.json
