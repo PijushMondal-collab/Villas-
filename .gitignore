@@ -3,7 +3,5 @@ obj/
 bin/
 *.csproj.user
 *.csproj
-appsettings.json
-Migrations/
 *.http
-*.slnx
+
